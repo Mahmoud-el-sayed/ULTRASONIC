@@ -5,10 +5,8 @@ Implement the  system to measure the distance using ultrasonic sensor  HC-SR04 w
 
  
 
-2. Measure the distance using the Ultrasonic sensor HC-SR04. Check the “HC-SR04 
-Ultrasonic MT Student Tutorial” pdf file to understand how to interface with this 
-sensor. 
+2. Measure the distance using the Ultrasonic sensor HC-SR04.
 
  
 
-3. The LCD should display the distance value like that:
+3. The LCD should display the distance value like that measured
