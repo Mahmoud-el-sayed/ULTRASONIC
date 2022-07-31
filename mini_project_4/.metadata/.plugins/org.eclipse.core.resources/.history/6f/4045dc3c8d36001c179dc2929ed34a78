@@ -1,0 +1,41 @@
+/*
+ ================================================================================================
+ Name        : measure_duty_cycle.c
+ Author      : Mohamed Tarek
+ Description : Measure duty cycle for a signal using ICU driver
+ Date        : 10/1/2018
+ ================================================================================================
+ */
+#define F_CPU 8000000
+#include "lcd.h"
+#include "ultrasonic.h"
+#include <avr/io.h> /* To use the SREG register */
+
+
+int main()
+{
+	/* Create configuration structure for ICU driver */
+
+	/* Enable Global Interrupt I-Bit */
+	SREG |= (1<<7);
+
+	/* Set the Call back function pointer in the ICU driver */
+
+	/* Initialize both the LCD and Ultrasonic driver */
+	LCD_init();
+	Ultrasonic_init();
+	LCD_displayString("distance=   cm ");
+	uint16 distance;
+	while(1)
+	{
+		distance=Ultrasonic_readDistance();
+		LCD_moveCursor(0,9);
+		LCD_intgerToString((uint16)distance);
+
+
+
+
+	}
+}
+
+
