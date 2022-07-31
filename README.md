@@ -1,8 +1,6 @@
  #ultrasonic_sensor
-Implement  Fan Controller system with the specifications listed  below: 
 
-Implement the  system to measure the distance using ultrasonic sensor  
-HC-SR04 with the specifications listed        below: 
+Implement the  system to measure the distance using ultrasonic sensor  HC-SR04 with the specifications listed        below: 
 1. Use ATmega16 Microcontroller with frequency 8Mhz. 
 
  
